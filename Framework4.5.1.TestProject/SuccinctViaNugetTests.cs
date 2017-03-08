@@ -21,7 +21,7 @@ namespace Framework451.TestProject
             Option<int>.Some(1);
             var assemblies = (from assembly in AppDomain.CurrentDomain.GetAssemblies()
                               where assembly.FullName ==
-                              "SuccincT, Version=2.2.0.0, Culture=neutral, PublicKeyToken=null"
+                              "SuccincT, Version=2.3.0.0, Culture=neutral, PublicKeyToken=null"
                               select assembly).ToList();
             Assert.AreEqual(1, assemblies.Count);
         }
